@@ -1,0 +1,35 @@
+.content1{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease-in-out;
+}
+.content2{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-in-out;
+}
+.content3{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.5s ease-in-out;
+}
+.content4{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s ease-in-out;
+}
+
+.content1show{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.content2show{
+    opacity: 1;
+    transform: translateY(0px);
+}.content3show{
+    opacity: 1;
+    transform: translateY(0px);
+}.content4show{
+    opacity: 1;
+    transform: translateY(0px);
+}

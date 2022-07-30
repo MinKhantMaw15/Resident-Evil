@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/intro.css"/>
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/scroll.css">
+        <link rel="stylesheet" href="css/slide.css">
+        <link rel="stylesheet" href="css/content.css">
+        <link rel="stylesheet" href="css/containerintro.css">
+    </head>
+    <body
+        class="bg-black overflow-x-hidden">
+
+        <!--Background-->
+        <video autoplay muted loop class="hidden md:block lg:block" id="myVideo">
+            <source src="vd/Resident_Evil_4_Remake_-_Reveal_Trailer___PlayStation_State_of_Play_2022(1080p).mp4" type="video/mp4"/>
+        </video>
+
+        <!--Intro-->
+        <div class="intro absolute z-10 text-xl md:text-3xl border border-white lg:text-4xl bg-black w-4/5 h-auto mt-12 lg:mt-24 ml-10 md:ml-8 lg:ml-24">
+            <div class="header mt-4">
+                <h1 class="text-white text-center heading">Welcome to the
+                    <br>
+                    RESIDENT EVIL PORTAL!</h1>
+            </div>
+            <div class="line bg-red-700 w-14 h-1 mx-auto mt-4"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 intro-massage">
+                <div class="intro-text text-center mt-10 text-xs md:text-base lg:base">
+                    <div class="text-1">
+                        <p class="text-white">
+                            Resident Evil Portal will be the go-to source for the
+                            <br>
+                            latest info on the Resident Evil series; it's a place for
+                            <br>
+                            players to share their stats with others around the
+                            <br>
+                            world, an overflowing item box of content for series
+                            <br>
+                            veterans and rookies.
+                        </p>
+
+                    </div>
+                    <div class="mt-4 mb-4 bg-white mx-auto w-44 h-px md:w-full  md:h-px"></div>
+                    <div class="text-2 text-xs">
+                        <p class="text-white mt-2 mb-2">Log in with your CAPCOM ID and enjoy all the contents!</p>
+                        <button class="w-44 h-8 bg-red-700 hover:bg-red-800 mt-2 text-white text-center text-base md:text-xl">Register Now!</button>
+                    </div>
+                </div>
+                <div class="intro-image mt-4">
+                    <img src="residentimg/reintro.png" class="w-44 h-44 md:w-60 md:h-60 mx-auto" alt="">
+                </div>
+            </div>
+            <div class="bg-white mx-auto h-px w-4/5 mt-4 mb-4"></div>
+            <div class="intro-text2">
+                <div class="headertwo text-base md:text-xl lg:text-2xl text-white text-center">
+                    <h1>About Site Integration and Authentication System
+                        <br>
+                        Change</h1>
+                </div>
+                <div class="bg-red-700 w-14 h-1 mx-auto mt-4"></div>
+                <div class="introt-1 text-xs md:text-sm lg-text-sm text-center text-white mt-10 mb-16">
+                    <p>This site integrates all content that was available on official Resident Evil sites,
+                        <br>
+                        like BIOHAZARD CLUB 96, Resident Evil Ambassador Program, Resident Evil.Net, and Resident Evil
+                        <br>Portal.
+                    </p>
+                </div>
+                <div class="bg-white mx-auto h-px w-4/5 mt-4 mb-4"></div>
+                <div class="fixed-box fixed bottom-0 w-4/5  md:w-4/5 mt-4 border border-white flex">
+                    <div class="checkbox hidden md:hidden lg:block ml-24 mt-4">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="text-btn hidden md:block lg:block mx-auto mt-4 cursor-pointer">
+                        <p class="text-white text-center text-xs md:text-sm md:text-base">Do not show from the next time</p>
+                    </div>
+                    <div class="btn hidden md:block lg:block mx-auto mb-4" id="btn1">
+                        <button class="border border-white w-28 h-8 md:w-44 md:h-8 text-xs md:text-sm bg-black text-white">Close</button>
+                    </div>
+                    <div class="btn block md:hidden lg:hidden mx-auto" id="btn2">
+                        <button class="border border-white w-28 h-8 md:w-44 md:h-8 text-xs md:text-sm bg-black text-white">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--All Body-->
+
+        <header class="mainheader relative  items-center h-screen">
+            <nav class="bg-white h-12 navigation z-30 " id="">
+                <div class="hover:bg-red-800 div-container button" id="">
+                    <div class="div1 bg-black"></div>
+                    <div class="div2 bg-black"></div>
+                    <div class="div3 bg-black"></div>
+                </div>
+                <div class="logo flex w-8">
+                    <img src="residentimg/login.png" class="w-4 h-4 mt-2" alt=""/>
+                    <p class="mt-1 ml-4">Login/Register</p>
+                </div>
+            </nav>
+
+            <nav class="lg:flex md:ml-20 lg-ml-20 md:flex-none lg:block text-xl font-serif bg-img nav2">
+                <ul class="text-white border-t border-white text-center">
+                    <li class="hover:text-red-500 lg:mt-2">
+                        <a href="#">NEWS</a>
+                    </li>
+                    <li class="hover:text-red-500 mt-2">
+                        <a href="#">HISTORY</a>
+                    </li>
+                    <li class="hover:text-red-500 mt-2">
+                        <a href="#">TITLE LINEUP</a>
+                    </li>
+                    <li class="hover:text-red-500 mt-2">
+                        <a href="#">CONTENTS</a>
+                    </li>
+                    <li class="hover:text-red-500 mt-2 mb-2">
+                        <a href="#">AMBASSADOR</a>
+                    </li>
+                    <ul>
+                        <li class="mt-2 hover:text-red-500 mt-2">
+                            <a href="#">User search</a>
+                        </li>
+                        <li class="mb-2 hover:text-red-500 mt-2 mb-2">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </ul>
+
+                <ul class="text-center border-t border-white">
+                    <li class="mt-2 mb-4">
+                        <a href="#" class="text-gray-400 text-base">Language</a>
+                    </li>
+                    <li class="mt-2 mb-4 text-center">
+                        <button class="flex ml-10 bg-black text-white w-32 h-8 ml-28 md:ml-56 lg:ml-12 border border-white">
+                            <img src="residentimg/world.png" alt="" class="w-4 h-4 mt-1 opacity-75"/>
+                            <p class="ml-6 text-base">English</p>
+                        </button>
+                    </li>
+                    <ul class="border-t border-white hidden lg:block">
+                        <li class="mt-2">
+                            <a href="#" class="text-gray-500 text-xs">OFFICIAL CHANNEL</a>
+                        </li>
+                        <li class="mt-4 mb-4">
+                            <button class="bg-sky-900 w-38 h-18 text-white flex shadow-xl">
+                                <div class="flex-shirnk-0">
+                                    <img src="residentimg/kindpng_300677.png" alt="" class="ml-2 opacity-80 object-cover w-4 h-4 mt-6"/>
+                                </div>
+                                <div class="ml-6 pt-1">
+                                    <h4 class="text-white text-base">Resident Evil</h4>
+                                    <p class="text-base text-gray-900">Official brand account</p>
+                                    <p class="text-gray-500 text-xs">@REBHPortal</p>
+                                </div>
+                            </button>
+                        </li>
+                        <ul class="border-t border-white">
+                            <li class="mt-6">
+                                <button class="bg-black border border-white w-44 h-8 text-white text-xs">
+                                    <span class="text-red-500 text-xl">?</span>
+                                    About this site
+                                </button>
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+                <img src="residentimg/remenu.png" alt="" class="hidden lg:block ml-32 mt-10"/>
+            </nav>
+
+
+            <div class="z-10 mr-20 ">
+                <img src="residentimg/relogo.png" class="z-10 absolute top-28 left-8 w-60 h-12 lg:w-96 lg:h-25 imglogo" alt=""/>
+            </div>
+
+            <div class="slideshow-container  container h-3/5">
+
+                <div class="mySlides fade z-10">
+                    <img src="residentimg/re4.jpg" style="width: 100%" class="object-fill md:object-cover"/>
+                </div>
+
+                <div class="mySlides fade z-10">
+                    <img src="residentimg/renetflix.jpg" class="object-fill md:object-cover" style="width: 100%"/>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="residentimg/revillage.jpg" class="object-fill md:object-cover" style="width: 100%"/>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="residentimg/reall.jpg" class="object-fill md:object-cover" style="width: 100%"/>
+                </div>
+
+                <div class="z-10 dots mb-10" style="text-align: center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </header><br>
+
+        <section class="sec2 z-50 absolute h-screen w-full text-white mt-20">
+            <div class="sec2-container">
+                <div class="myprofile flex bg-red-900 w-full h-20 items-center">
+                    <div class="line bg-white w-4 h-1 mb-4 ml-2"></div>
+                    <div class="profile-header text-center ml-2 lg:ml-2">
+                        <h2 class="text-xl lg:text-3xl font-mono">MY PROFILE</h2>
+                    </div>
+                    <div class="text-profile text-center m-auto hidden md:hidden lg:block font-serif">
+                        <p>Get the most out of your experience by personalizing your profile page!</p>
+                    </div>
+                    <div class="btn mr-6">
+                        <button class="border hover:bg-black text-base ml-12 md:ml-72 lg:text-xl border-white w-24 h-8 lg:w-32 lg:h-8">My Profile</button>
+                    </div>
+                </div>
+
+                <div class="sec2-content mt-10">
+                    <div class="sec2-content-header ml-10">
+                        <div class="header-content-line w-6 h-0.5 bg-red-500"></div>
+                        <div class="content-header">
+                            <h1 class="text-5xl font-serif text-white ml-6 mt-4">NEWS</h1>
+                        </div>
+                    </div>
+
+                    <div class="p-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+                            <div class="p-4 rounded-md flex items-center justify-center">
+                                <div class="content1 underline cursor-pointer hover:underline-offset-4">
+                                    <div class="img-content border border-white overflow-hidden">
+                                        <img src="residentimg/reunbrella.png" class="w-72" alt="">
+                                    </div>
+                                    <div class="text-content text-sm">
+                                        <p>UNDER THE UMBRELLA 『The BSAA
+                                            <br>
+                                            and the Hound Wolf Squad: Sniffing
+                                            <br>
+                                            Out the Truth』is out now!</p>
+                                    </div>
+                                    <div class="date-content text-xs mt-4 ml-4">
+                                        <p>
+                                            <span class="text-red-500 ">Jul.01.2022</span>
+                                            Event・Campaign</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-md flex items-center justify-center">
+                                <div class="content2 cursor-pointer underline hover:underline-offset-1 ml-4 overflow-hidden">
+                                    <div class="img-content border border-white">
+                                        <img src="residentimg/reinfor.png" class="w-72 " alt="">
+                                    </div>
+                                    <div class="text-content text-sm">
+                                        <p>UNDER THE UMBRELLA 『The BSAA
+                                            <br>
+                                            and the Hound Wolf Squad: Sniffing
+                                            <br>
+                                            Out the Truth』is out now!</p>
+                                    </div>
+                                    <div class="date-content text-xs mt-4 ml-4">
+                                        <p>
+                                            <span class="text-red-500 ">Jul.01.2022</span>
+                                            Event・Campaign</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-md flex items-center justify-center">
+                                <div class="content3 cursor-pointer underline hover:underline-offset-4 ml-4 overflow-hidden">
+                                    <div class="img-content border border-white">
+                                        <img src="residentimg/reorpra.png" class="w-72" alt="">
+                                    </div>
+                                    <div class="text-content text-sm">
+                                        <p>UNDER THE UMBRELLA 『The BSAA
+                                            <br>
+                                            and the Hound Wolf Squad: Sniffing
+                                            <br>
+                                            Out the Truth』is out now!</p>
+                                    </div>
+                                    <div class="date-content text-xs mt-4 ml-4">
+                                        <p>
+                                            <span class="text-red-500 ">Jul.01.2022</span>
+                                            Event・Campaign</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-md flex items-center justify-center">
+                                <div class="content4 underline cursor-pointer hover:underline-offset-4 ml-4 overflow-hidden ">
+                                    <div class="img-content border border-white">
+                                        <img src="residentimg/renetfor.jpg" class="w-72" alt="">
+                                    </div>
+                                    <div class="text-content text-sm">
+                                        <p>UNDER THE UMBRELLA 『The BSAA
+                                            <br>
+                                            and the Hound Wolf Squad: Sniffing
+                                            <br>
+                                            Out the Truth』is out now!</p>
+                                    </div>
+                                    <div class="date-content text-xs mt-4 ml-4">
+                                        <p>
+                                            <span class="text-red-500 ">Jul.01.2022</span>
+                                            Event・Campaign</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-sec2 ml-10">
+                        <button class="w-44 text-red-500 font-mono h-8 border border-red-700 bg-black mt-4 text-center text-2xl">
+                            More
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <section class="sec3 z-60 mt-10 h-screen w-screen flex items-center">
+                <div class="sec3container ml-10">
+                    <div class="bg-red-500 w-12 h-1 mb-10"></div>
+                    <h1 class="text-white text-5xl font-serif mt-2 mb-2 font-extrabold">HISTORY</h1>
+                    <p class="text-base text-white mt-2 mb-2 font-bold">Capcom released Resident Evil in 1996
+                        <br>
+                        and forever defined the world of survival horror.</p>
+                    <button class="w-24 h-8 bg-red-500 border border-red-700 mt-6">More</button>
+                </div>
+            </section>
+
+            <section class="sec4 w-screen h-screen mt-10">
+                <div class="sec4-container">
+                    <div class="sec4-intro ml-10">
+                        <div class="bg-red-600 w-6 h-1 mt-10 mb-4"></div>
+                        <h1 class="text-white text-4xl mt-4 mb-2 flex">
+                            <div class="circlediv rounded-full bg-red-600 mt-4 flex items-center mr-2 justify-center" style="height: 10px; width: 10px;"></div>
+                            TITLE LINEUP
+                        </h1>
+                        <p class="mt-2 ml-2 text-white text-base">A series of masterpieces</p>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <script src="js/app.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/sec3-scroll.js"></script>
+        <script src="js/slideshow.js"></script>
+    </body>
+</html>
